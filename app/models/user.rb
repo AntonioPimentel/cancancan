@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
     has_many :posts
     has_many :coments
+
+  enum role:{guest: 0, admin: 1} 
 end
